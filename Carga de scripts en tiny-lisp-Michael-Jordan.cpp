@@ -44,4 +44,7 @@ void load_script(const char* filename, bool show_script = false)
             cout << ColorConsole::fg_blue << ColorConsole::bg_white;
             cout << script << endl;
         }
+        consoleBox->new_text(); // <--- Aquí se llama a la función new_text
+        consoleBox->set_text(script);   // <--- Aquí se llama a la función set_text
+    }
 }
