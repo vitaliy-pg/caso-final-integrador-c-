@@ -37,4 +37,11 @@ void load_script(const char* filename, bool show_script = false)
         }
         fclose(f);
         f = nullptr;
+
+        if (show_script)
+        {
+
+            cout << ColorConsole::fg_blue << ColorConsole::bg_white;
+            cout << script << endl;
+        }
 }
