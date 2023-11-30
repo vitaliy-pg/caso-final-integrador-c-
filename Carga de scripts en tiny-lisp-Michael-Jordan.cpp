@@ -12,3 +12,5 @@ struct ConsoleBox
     void new_text() {/*...*/}
     void set_text(const string &text) { cout << text << endl; }
 };
+
+ConsoleBox *consoleBox = new ConsoleBox;
