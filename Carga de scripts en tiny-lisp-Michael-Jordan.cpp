@@ -59,3 +59,9 @@ void load_script(const char* filename, bool show_script = false)
 }
 
 void load_script()
+{
+    char filename[500];
+    printf("Archivo: ");
+
+
+    scanf("%499s", filename);
