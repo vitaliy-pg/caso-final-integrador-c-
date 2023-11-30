@@ -16,3 +16,13 @@ struct ConsoleBox
 ConsoleBox *consoleBox = new ConsoleBox;
 void load_script(const char* filename, bool show_script = false)
 {
+    string script;
+    FILE* f = nullptr;
+
+    try
+    {
+        // Intentar abrir el archivo en modo lectura binaria
+        f = fopen(filename, "rb");
+        if (!f)
+        {
+}
