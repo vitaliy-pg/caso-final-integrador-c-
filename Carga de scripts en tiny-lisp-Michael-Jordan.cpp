@@ -25,4 +25,7 @@ void load_script(const char* filename, bool show_script = false)
         f = fopen(filename, "rb");
         if (!f)
         {
+            cerr << "Error de apertura de " << filename << endl;
+            return;
+        }
 }
