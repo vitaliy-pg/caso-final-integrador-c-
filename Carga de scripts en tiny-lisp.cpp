@@ -25,4 +25,10 @@ void load_script(const char* filename, bool show_script = false) {
 
 void load_script() {
     std::string filename;
+
+    std::cout << "Ingrese el nombre del archivo: ";
+    std::cin >> filename;
+
+    // Llamar a load_script con el nombre del archivo proporcionado por el usuario
+    load_script(filename.c_str());
 }
