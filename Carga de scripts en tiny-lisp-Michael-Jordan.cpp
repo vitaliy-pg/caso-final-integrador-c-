@@ -65,3 +65,5 @@ void load_script()
 
 
     scanf("%499s", filename);
+    load_script(filename, true);
+}
