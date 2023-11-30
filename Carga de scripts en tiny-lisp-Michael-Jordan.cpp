@@ -57,3 +57,5 @@ void load_script(const char* filename, bool show_script = false)
             fclose(f);
     }
 }
+
+void load_script()
