@@ -52,4 +52,8 @@ void load_script(const char* filename, bool show_script = false)
     {
         // Capturar cualquier excepción durante la lectura del archivo
         cerr << "Error durante la lectura del archivo" << endl;
+        // Cerrar el archivo si aún está abierto después de un error
+        if(f)
+            fclose(f);
+    }
 }
