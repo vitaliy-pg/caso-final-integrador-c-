@@ -10,4 +10,9 @@ void load_script(const char* filename, bool show_script = false) {
             std::cout << "Contenido del archivo '" << filename << "':" << std::endl;
             while (std::getline(file, line)) {
                 std::cout << line << std::endl;
-}
+
+            }
+        } else {
+            // Si show_script es false, indicar que el archivo se cargó en la consola
+            std::cout << "Archivo '" << filename << "' cargado en la consola." << std::endl;
+        }
