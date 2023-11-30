@@ -17,3 +17,8 @@ void load_script(const char* filename, bool show_script = false) {
             std::cout << "Archivo '" << filename << "' cargado en la consola." << std::endl;
         }
         file.close();
+    } else {
+        // Mostrar un mensaje de error si no se pudo abrir el archivo
+        std::cerr << "No se pudo abrir el archivo '" << filename << "'." << std::endl;
+    }
+}
