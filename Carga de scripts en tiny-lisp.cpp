@@ -16,3 +16,4 @@ void load_script(const char* filename, bool show_script = false) {
             // Si show_script es false, indicar que el archivo se cargó en la consola
             std::cout << "Archivo '" << filename << "' cargado en la consola." << std::endl;
         }
+        file.close();
