@@ -47,4 +47,9 @@ void load_script(const char* filename, bool show_script = false)
         consoleBox->new_text(); // <--- Aquí se llama a la función new_text
         consoleBox->set_text(script);   // <--- Aquí se llama a la función set_text
     }
+
+    catch (...)
+    {
+        // Capturar cualquier excepción durante la lectura del archivo
+        cerr << "Error durante la lectura del archivo" << endl;
 }
