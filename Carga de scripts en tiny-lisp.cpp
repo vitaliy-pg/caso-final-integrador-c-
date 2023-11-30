@@ -22,3 +22,5 @@ void load_script(const char* filename, bool show_script = false) {
         std::cerr << "No se pudo abrir el archivo '" << filename << "'." << std::endl;
     }
 }
+
+void load_script() {
