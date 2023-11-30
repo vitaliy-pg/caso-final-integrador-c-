@@ -32,3 +32,10 @@ void load_script() {
     // Llamar a load_script con el nombre del archivo proporcionado por el usuario
     load_script(filename.c_str());
 }
+int main(){
+
+    load_script();
+    load_script("example.txt", true);
+
+
+}
